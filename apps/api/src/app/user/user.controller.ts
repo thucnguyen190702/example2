@@ -16,7 +16,7 @@ export class UserController{
   fineOne(@Param() id:string){
     return this.userService.findOne(id);
   }
-  @Post('/create')
+  @Post('create')
   create(@Body() createUserDto:CreateUserDto){
       return this.userService.create(createUserDto);
   }
